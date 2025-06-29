@@ -1,0 +1,5 @@
+Starts with two lists sorted in increasing order.
+List 1 has m elements. List 2 has n elements.
+List 1 is of sixe m + n. Last n elements in array 1 are 0's
+Need to merge them in O(m+n)
+Start comapring both lists from the end rather than the beginning and add to end of list 1. This way, 0's get replaced and you do not lose values in list 1. 
