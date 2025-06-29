@@ -15,7 +15,8 @@ class Solution:
                 n -= 1
             index -= 1
         if n >= 0:
-            nums1[:n+1] = nums2[:n+1] 
+            nums1[:n+1] = nums2[:n+1]
+        ... 
 
 
         
