@@ -1,0 +1,4 @@
+need to remove elements from a list that are equal to a val
+start index i = 0 and go upto len of list
+each time u see element = val, use pop(i) to remove element
+but whenever u pop, reduce i by 1 because there is one less element now
