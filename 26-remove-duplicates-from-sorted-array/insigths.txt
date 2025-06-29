@@ -1,0 +1,8 @@
+need to remove duplicates from sorted list
+lets use a 2 pointer approach i and k. 
+k is responsible to point to index at which new unique elemenet needs to be placed
+i is responsible to point at index of element to check if it is a unique element.
+skip 0th element. both pointer start from index 1
+i keeps moving forward, each time, it checks if element at i is same as element at i - 1
+if the elements are different, we found a unique element. (because the list is sorted)
+when unique element is found, place it in k index and move forward
