@@ -1,0 +1,12 @@
+need to find majority element
+this is the element that appears atleast n/2 times in the list where n is the len of list
+so more than half the list is majority element
+start by declaring 2 variables; count and maj_ele
+initially, maj_ele is first element in list. count is set to 1
+iterate using for loop from index = 1 to end of list
+each time, if element at index = maj_ele, increase count by 1
+if it is not equal, decrease count by 1
+if count = 0, make the element at current index the maj_ele
+return maj_ele at the end.
+this logic works because elements try to cancel each other out based on how many times they occur.
+the majority element occurs more than n/2 times. so, all the elements together can still not cancel it out. therefore, majority element rules
