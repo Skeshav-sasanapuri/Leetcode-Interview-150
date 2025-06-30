@@ -1,0 +1,7 @@
+need to check and remove dupplicates in a list that occur more than twice
+list has been sorted in ascending order
+3 pointer approach. But I use only k and i
+k starts from 2. this pointer decides what element should be placed at position k
+i starts at 2 and moves until end of list
+at every i, check if it is not equal to element at k-1 and k-2
+if not, place the ith element at k and increment k by 1
