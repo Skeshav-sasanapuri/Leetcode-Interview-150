@@ -1,0 +1,13 @@
+i used a 2 pointer approach
+there are simpler ways on the internet that keeps track of min price encoutnerer. 
+then, for each price, it compares current max profit with difference between price and min price. replaces max profit if criteria satisfies
+the above approach is simple, readable and good.
+my approach was probably 2 pointer because i decided to use 2 pointer before completely understanding the problem
+it is longer and a little more complex, but it is faster
+so what is do is p1 starts at 0 and p2 starts at 1
+loop goes on until p2 is less than len of list
+at each iteration, i find the difference between price at p2 and p1. 
+if difference is negative, p1 becomes p2 and p2 becomes p1 + 1
+that means, a new smallest price is found
+else increase p2 by 1. then, i compare difference with profit
+if difference is greater than profit, i difference my new profit
