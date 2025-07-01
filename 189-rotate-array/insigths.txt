@@ -1,0 +1,6 @@
+need to rotate array k times
+if k is 3, all elements move 3 steps forward, if it is at the last index, it comes to index 0
+i did not get this idea by myself, but i see the pattern now that I observe
+start by reversing the entire array
+the reverse elements between 0 to k-1 index
+next, reverse elements between k to end of list
