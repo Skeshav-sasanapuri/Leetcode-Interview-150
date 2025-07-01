@@ -8,8 +8,9 @@ class Solution:
                 nums[start], nums[end] = nums[end], nums[start]
                 start += 1
                 end -= 1
-        k = k % len(nums)
-        reverse(0, len(nums)-1)
+        l = len(nums)
+        k = k % l
+        reverse(0, l-1)
         reverse(0, k-1)
-        reverse(k, len(nums)-1)
+        reverse(k, l-1)
         
