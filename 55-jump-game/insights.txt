@@ -1,0 +1,8 @@
+need to find if it is possible to reach end of the list
+at each index, user can jump a maximum of the value at that index
+set max_reachable to 0
+iterate through the list
+at each loop, if max_reachable is less that the index that could be reach from the current index, set max reachable to this new value
+if at anytime, max_reachable is lesser than i (index at the loop), that means this i could never be reach from any of the previous elements
+so return false
+if loop completes, return true at the end
