@@ -5,6 +5,8 @@ class Solution:
         for i in range(l):
             if i > max_reachable:
                 return False
-            max_reachable = max(i + nums[i], max_reachable)
+            if max_reachable < i + nums[i]:
+                max_reachable = i + nums[i]
+            # max_reachable = max(i + nums[i], max_reachable)
         
         return True
