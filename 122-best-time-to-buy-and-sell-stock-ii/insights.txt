@@ -1,0 +1,6 @@
+Need to find maximum possible profit from buying and selling stock as many times as one wants
+I was thinking a lot about this. It's actually very simple
+there is no limit on the number of time you buy and sell
+so u start from index 1 upto len(list)
+if price at index is greater than price at index-1, simply add it to profit
+done
