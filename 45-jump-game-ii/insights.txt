@@ -1,0 +1,11 @@
+Allrite, so I had to take help of good ol' chatgpt again.
+I just was not able to think of the logic to make this happen
+the question was that at each index of a list, the element represents the maximum possible jump from that point
+the question asks what is the least number of jumps required to reach the end of the list
+now, i did understand the solution. but i might forget. so writing it out like this is probably going to help
+iterate through the list. At each iteration (index) store the jump in a variable "farthest". Only replace if this is the farthest we can reach as of now. So use a max function with farthest
+also, initialize 2 more variables. They are current_max and jumps.
+current_max stores the farthest you can reach from the last jump. So, at index 1, if value was 2. current_max will be 2. at index 2, value can be 10. but current_max is still 2. farthest will be 10
+we do so because we do not want to take a jump unless required. so, if i = current_max, then we increase jumps by 1. and make current_max = farthest
+this means, we have reached the limit of how far we can reach with the current jump. so we need to take another jump to get to the new limit. 
+from the last jump, we are basically checking until we reach its limit. if we do, we move to the next highest jump within its limit.
