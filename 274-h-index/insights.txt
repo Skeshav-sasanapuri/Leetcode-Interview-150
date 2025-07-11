@@ -1,0 +1,16 @@
+okay, lets goo!! i did this question without any help from the internet
+basically, given an array citations where the value of the ith element the number of citations the ith paper has
+i need to find the H-index which is the maximum value of h such that there are atleast h papers cited h times
+my approach was to first sort it
+i then interate over the list
+at each iteration, i check if the value of the element in citations is greater than or equal to the number of remaining elements in the list
+if yes, return the number of remaining elements as the H index
+this works because the list is sorted
+if there are only 4 elements remaing
+but the value at current iteration is 5
+that means the next 4 elements are greater than or equal to 5
+going back to the definition of h index
+we need h that is there are atleast h papers cited atleast h times
+so if there are 4 papers remaining and every remanining citation is greater or equal to than 5
+h index cannot be greater than 4
+so h index is 4
