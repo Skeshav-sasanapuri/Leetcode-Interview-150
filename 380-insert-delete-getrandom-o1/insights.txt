@@ -1,0 +1,24 @@
+allrite! lets gooo (fire emoji) (fire emoji) (fire emoji)
+i did this by myself while taking minimal help from the internet
+i need to implement intert, delete, getRandom within a class with O(1) time complexity each
+i could use a set to go about this. But this would let me implement insert and delete but not getRandom
+so i need to use a combination of 2 data structutes
+the 2 are list and dictionary
+list can be used to getRandom at O(1). And dictionary can help in insert and delete in O(1)
+in constructor, i initialize dict and list
+in insert, it is easy, i check if element is in dict. if not, append it to list. add it to dict such that key is element and the value is the len of list -1 which would be the index of the element in the list
+for remove, it is slightly more tricky.
+what i need to do is if element need to be removed from list
+i need to swap element with last element in list. this would be O(1)
+then i pop last element in list which is again O(1)
+how i do this is: i have index of element to remove from list
+i have last index of list from len of list
+now that i have both indexes, i can simply swap using the tuple trick
+once swapped, i can pop the last element from the list which is element
+but, i also need to pop element from dict as we no longer have it in list
+also, the last element in list that was swapped inside, i need to update the index of that in dict. 
+this can be done by storing the index of the element from dict, then storing val of the last element in list before swapping
+now, use these 2 values to update dict
+lastly, get random
+just generate random int between 0 and len(list)-1
+return val at that index
